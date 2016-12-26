@@ -8,7 +8,8 @@
     "hello-world": "node ./samples/hello-world.js",
     "types-examples": "node ./samples/learning-types.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/ts-node ./server/server.ts"
+    "start": "./node_modules/.bin/ts-node ./server/server.ts",
+    "watch": "./node_modules/.bin/nodemon  -w . --ext \".ts\" --exec \"npm run start\""
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +19,7 @@
     "@types/node": "^6.0.53",
     "@types/sequelize": "^4.0.39",
     "http-server": "^0.9.0",
+    "nodemon": "^1.11.0",
     "ts-node": "^1.7.2",
     "typescript": "^2.1.4"
   },
