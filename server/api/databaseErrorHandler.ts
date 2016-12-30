@@ -6,6 +6,6 @@ export function databaseErrorHandler(res: Response, err: any) {
   console.error("Database error occurred ", id, err);
   res.status(500).json({
     code: 'ERR-002',
-    message: `Error occurred error code ${id}`
+    message: `Error occurred: error code ${id}`
   });
 }
