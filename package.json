@@ -9,7 +9,8 @@
     "types-examples": "node ./samples/learning-types.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./node_modules/.bin/ts-node ./server/server.ts",
-    "watch": "./node_modules/.bin/nodemon -w . --ext \".ts\" --exec \"npm run start\""
+    "watch": "./node_modules/.bin/nodemon -w . --ext \".ts\" --exec \"npm run start\"",
+    "oo": "node ./samples/object-oriented.js"
   },
   "author": "",
   "license": "ISC",
