@@ -1,3 +1,11 @@
-<p>
-  course-detail works
-</p>
+<h2>{{courseDetail?.description}}</h2>
+
+<table>
+  <tbody>
+    <tr *ngFor="let lesson of courseDetail?.lessons">
+      <td>{{lesson.description}}
+        <span>{{lesson.duration}}</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
